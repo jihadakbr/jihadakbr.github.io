@@ -294,6 +294,15 @@
 
 		return $this;
 
+		// Code to generate the numbered divs
+		const container = this;
+
+		for (let i = 1; i <= 10; i++) {
+			const numberedDiv = $('<div>', { class: 'numbered-div', text: i });
+			container.append(numberedDiv);
+		}
+
+		return this;
 	};
 
 	/**
