@@ -3573,7 +3573,7 @@ input, select, textarea {
 			line-height: 1;
 			padding: 1rem 1.75rem;
 			text-transform: uppercase;
-			visibility: hidden; /* default = visible */
+			visibility: visible; /* default = visible */
 		}
 
 			#header .logo:hover {
