@@ -3516,7 +3516,7 @@ input, select, textarea {
 		-ms-user-select: none;
 		user-select: none;
 		height: 20rem;
-		padding-bottom: 6rem; /* default = 8 rem */
+		padding-bottom: 8rem;
 		position: relative;
 		text-align: center;
 		z-index: 2;
@@ -3573,7 +3573,7 @@ input, select, textarea {
 			line-height: 1;
 			padding: 1rem 1.75rem;
 			text-transform: uppercase;
-			visibility: visible; /* default = visible */
+			visibility: visible;
 		}
 
 			#header .logo:hover {
@@ -3584,7 +3584,7 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			#header {
-				height: 10rem; /* default = 14rem */
+				height: 14rem;
 				padding-bottom: 4rem;
 			}
 
@@ -3787,7 +3787,7 @@ input, select, textarea {
 			}
 
 			#main > .post header.major > h1, #main > .post header.major h2 {
-				font-size: 2.5rem;
+				font-size: 4rem;
 				line-height: 1.1;
 				margin: 0 0 2rem 0;
 			}
@@ -4393,7 +4393,8 @@ input, select, textarea {
 		letter-spacing: 0.075em;
 		line-height: 1.5;
 		text-align: center;
-		margin: 2rem auto;
+		text-transform: uppercase;
+		margin: 4rem auto 8rem auto;
 		width: calc(100% - 4rem);
 		max-width: 72rem;
 		z-index: 2;
