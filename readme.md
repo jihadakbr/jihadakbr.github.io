@@ -24,4 +24,3 @@ Aspiring Data Scientist passionate about machine learning, skilled in Python, SQ
 - 📍 Jakarta, Indonesia
 - ✉️ jihadakbr@gmail.com
 - 🔗 [LinkedIn](https://linkedin.com/in/jihadakbr)
-- 💻 [GitHub](https://github.com/jihadakbr)
