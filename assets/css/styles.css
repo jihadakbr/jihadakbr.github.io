@@ -68,3 +68,7 @@ body {
 .floating {
     animation: float 3s ease-in-out infinite;
 }
+
+.flex.flex-wrap.languages{
+    flex-direction: column;
+}
