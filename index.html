@@ -1,1 +1,558 @@
-hello world
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jihad Akbar | Data Science Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="assets\css\styles.css">
+    <script src="assets\js\main.js" defer></script>
+    
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-sm z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#home" class="text-xl font-bold text-blue-600">Jihad Akbar</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-blue-600">Home</a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-blue-600">About</a>
+                    <a href="#experience" class="nav-link text-gray-700 hover:text-blue-600">Experience</a>
+                    <a href="#projects" class="nav-link text-gray-700 hover:text-blue-600">Projects</a>
+                    <a href="#education" class="nav-link text-gray-700 hover:text-blue-600">Education</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-blue-600">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="menu-toggle" class="text-gray-700 hover:text-blue-600">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50">Home</a>
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50">About</a>
+                <a href="#experience" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50">Experience</a>
+                <a href="#projects" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50">Projects</a>
+                <a href="#education" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50">Education</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="section pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-r from-blue-50 to-indigo-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Hi, I'm <span class="text-blue-600">Jihad Akbar</span></h1>
+                    <h2 class="text-2xl md:text-3xl font-semibold text-gray-700 mb-6">Data Science Enthusiast</h2>
+                    <p class="text-lg text-gray-600 mb-8">Detail-oriented Machine Learning professional with expertise in Python, SQL, and data visualization. Passionate about building data-driven solutions that create real impact.</p>
+                    <div class="flex space-x-4">
+                        <a href="#contact" class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300 shadow-md">Get In Touch</a>
+                        <a href="#projects" class="px-6 py-3 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition duration-300">View Projects</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full bg-blue-100 overflow-hidden shadow-xl floating">
+                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Jihad Akbar" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">About Me</h2>
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/3 mb-8 md:mb-0">
+                    <div class="bg-blue-50 p-6 rounded-xl shadow-sm">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Personal Info</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-center">
+                                <i class="fas fa-map-marker-alt text-blue-600 mr-3"></i>
+                                <span class="text-gray-700">Jakarta, Indonesia</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-phone text-blue-600 mr-3"></i>
+                                <span class="text-gray-700">(+62) 8133 2326 785</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-envelope text-blue-600 mr-3"></i>
+                                <span class="text-gray-700">jihadakbr@gmail.com</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fab fa-linkedin text-blue-600 mr-3"></i>
+                                <a href="https://linkedin.com/in/jihadakbr" target="_blank" class="text-gray-700 hover:text-blue-600">linkedin.com/in/jihadakbr</a>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fab fa-github text-blue-600 mr-3"></i>
+                                <a href="https://github.com/jihadakbr" target="_blank" class="text-gray-700 hover:text-blue-600">github.com/jihadakbr</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="md:w-2/3 md:pl-12">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Career Summary</h3>
+                    <p class="text-gray-600 mb-6">
+                        Detail-oriented Machine Learning Annotator with over 1 year of experience at a leading computer vision company, specializing in precise image and video annotation to support machine learning models. Certified in data science, analytics, and engineering, with expertise in Python, SQL, and data visualization tools.
+                    </p>
+                    <p class="text-gray-600 mb-8">
+                        Driven to leverage my technical skills in data science, machine learning, or AI engineering to optimize model performance, enhance data quality, and contribute to innovative, data-driven solutions in a dynamic environment.
+                    </p>
+                    
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Skills</h3>
+                    <div class="flex flex-wrap gap-3 mb-8">
+                        <span class="skill-badge bg-blue-100 text-blue-800 px-4 py-2 rounded-full">Python</span>
+                        <span class="skill-badge bg-blue-100 text-blue-800 px-4 py-2 rounded-full">SQL</span>
+                        <span class="skill-badge bg-blue-100 text-blue-800 px-4 py-2 rounded-full">Machine Learning</span>
+                        <span class="skill-badge bg-blue-100 text-blue-800 px-4 py-2 rounded-full">Data Visualization</span>
+                        <span class="skill-badge bg-blue-100 text-blue-800 px-4 py-2 rounded-full">Tableau</span>
+                        <span class="skill-badge bg-blue-100 text-blue-800 px-4 py-2 rounded-full">Power BI</span>
+                        <span class="skill-badge bg-blue-100 text-blue-800 px-4 py-2 rounded-full">TensorFlow</span>
+                        <span class="skill-badge bg-blue-100 text-blue-800 px-4 py-2 rounded-full">PyTorch</span>
+                        <span class="skill-badge bg-blue-100 text-blue-800 px-4 py-2 rounded-full">AWS</span>
+                        <span class="skill-badge bg-blue-100 text-blue-800 px-4 py-2 rounded-full">Azure</span>
+                    </div>
+                    
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Languages</h3>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="flex items-center">
+                            <div class="w-24 font-medium text-gray-700">Indonesian</div>
+                            <div class="text-sm text-gray-500">Native</div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-24 font-medium text-gray-700">English</div>
+                            <div class="text-sm text-gray-500">IELTS 7.0 (C1)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Work Experience</h2>
+            
+            <div class="space-y-8">
+                <!-- Experience 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Machine Learning Annotator Internship</h3>
+                        <span class="text-blue-600 font-medium">Oct 2024 - Present</span>
+                    </div>
+                    <div class="text-gray-700 font-medium mb-3">PT Nomura Research Institute Indonesia</div>
+                    <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                        <li>Evaluated AI predictions in a gas station safety project by categorizing 200 daily images and videos into risk levels (low, medium, high) and classifying outcomes as true positive, true negative, false positive, or false negative, ensuring adherence to safety rules.</li>
+                        <li>Identified vehicle and carry can properties, detected anomalies, and provided feedback that improved model accuracy from 80% to 95%.</li>
+                        <li>Labeled images with false positives and false negatives using bounding boxes and segmentation for 50 images daily, maintaining an annotation accuracy of 95%-100%.</li>
+                    </ul>
+                </div>
+                
+                <!-- Experience 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Project-Based Data Science Internship</h3>
+                        <span class="text-blue-600 font-medium">Feb 2025 - Feb 2025</span>
+                    </div>
+                    <div class="text-gray-700 font-medium mb-3">Bukit Vista Hospitality Services</div>
+                    <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                        <li>Developed an eye disease classifier for cataract, diabetic retinopathy, glaucoma, and normal conditions. Performed extensive image preprocessing, including checks for class distribution, image size, duplicates, corruption, blurriness, exposure issues, distortions, and noise, ensuring data quality for model training.</li>
+                        <li>Built and fine-tuned deep learning models, selecting InceptionV3 with 83% accuracy as the optimal solution. Implemented techniques like early stopping and layer unfreezing for performance improvement, then deployed the model to production using Streamlit on the Hugging Face platform.</li>
+                    </ul>
+                </div>
+                
+                <!-- Experience 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Data Annotator</h3>
+                        <span class="text-blue-600 font-medium">Feb 2024 - Sep 2024</span>
+                    </div>
+                    <div class="text-gray-700 font-medium mb-3">CVAT.ai Corporation, Palo Alto, California, United States</div>
+                    <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                        <li>Annotated images using CVAT's brush tool at an average pace of 15 minutes per image, accurately outlining paths for a robot lawnmower. Managed diverse annotation classes, achieving an average annotation accuracy of 90%.</li>
+                        <li>Reclassified over 10,000 annotated categories into specific subclasses, such as Natural objects into tree crown, high grass, rock, etc., and applied bounding boxes for selected categories.</li>
+                        <li>Validated annotations from approximately 30 team members, maintaining an accuracy rate of 90-100% through rigorous validation processes and providing feedback that improved annotation quality and consistency by 20-50% across the team.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Data Projects</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <div class="h-48 bg-blue-100 flex items-center justify-center">
+                        <i class="fas fa-chart-line text-blue-600 text-5xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">FutureSight: E-Commerce Forecasting</h3>
+                        <p class="text-gray-600 mb-4">Built time series forecasting model to optimize inventory and revenue planning by accurately predicting daily order volumes and revenue trends.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Python</span>
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">SARIMA</span>
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Time Series</span>
+                        </div>
+                        <a href="https://github.com/jihadakbr/time-series-forecasting-olist-e-commerce" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+                            View Project <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <div class="h-48 bg-blue-100 flex items-center justify-center">
+                        <i class="fas fa-user-slash text-blue-600 text-5xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Churn Analysis</h3>
+                        <p class="text-gray-600 mb-4">Conducted churn analysis to predict customer churn and identify key drivers using feature importance analysis with XGBoost achieving 91% recall.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Python</span>
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">XGBoost</span>
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Streamlit</span>
+                        </div>
+                        <a href="https://github.com/jihadakbr/churn-analysis" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+                            View Project <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <div class="h-48 bg-blue-100 flex items-center justify-center">
+                        <i class="fas fa-users text-blue-600 text-5xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">RFM Analysis for Automobile Sales</h3>
+                        <p class="text-gray-600 mb-4">Led RFM analysis to segment customers in automobile sales, creating 9 customer segments with tailored RFM scores and actionable insights.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Python</span>
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Power BI</span>
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Customer Segmentation</span>
+                        </div>
+                        <a href="https://github.com/jihadakbr/rfm-customer-segmentation-automobile-sales" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+                            View Project <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Certifications Section -->
+    <section id="education" class="section py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Education & Certifications</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Education -->
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-6">Education</h3>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-sm mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-semibold text-gray-800">Data Science Bootcamp</h4>
+                            <span class="text-blue-600 font-medium">Oct 2024 - Present</span>
+                        </div>
+                        <div class="text-gray-700 font-medium mb-3">Dibimbing.id</div>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                            <li>Comprehensive program focused on data science and machine learning, covering essential skills in data analysis, data visualization (Tableau and Power BI), predictive modeling, and programming (Python and SQL).</li>
+                            <li>Hands-on experience in real-world projects to build a robust data science portfolio.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-semibold text-gray-800">Sarjana Sains (Equivalent to BSc) in Physics</h4>
+                            <span class="text-blue-600 font-medium">Aug 2016 - Jul 2020</span>
+                        </div>
+                        <div class="text-gray-700 font-medium mb-3">Physics Department of Universitas Sebelas Maret, Surakarta, Indonesia</div>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                            <li>Graduated Cum Laude, GPA: 3.75/4.00</li>
+                            <li>Relevant Coursework: Statistical Physics, Physics Computation, Numerical Analysis, Physics-Based Modeling and Simulation</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Certifications -->
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-6">Certifications</h3>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-sm h-full">
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mr-4">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800">Microsoft Azure Fundamentals AZ-900 Exam Prep Specialization</h4>
+                                    <p class="text-sm text-gray-600">Microsoft • Jan 2024</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mr-4">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800">Python for Everybody Specialization</h4>
+                                    <p class="text-sm text-gray-600">University of Michigan • Jan 2024</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mr-4">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800">Generative Adversarial Networks (GANs) Specialization</h4>
+                                    <p class="text-sm text-gray-600">DeepLearning.AI • Dec 2023</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mr-4">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800">Practical Data Science on the AWS Cloud Specialization</h4>
+                                    <p class="text-sm text-gray-600">DeepLearning.AI • Dec 2023</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mr-4">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800">IBM Data Engineering Professional Certificate</h4>
+                                    <p class="text-sm text-gray-600">IBM • Oct 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-4 text-center">
+                            <button id="show-more-certs" class="text-blue-600 hover:text-blue-800 font-medium">
+                                Show More <i class="fas fa-chevron-down ml-1"></i>
+                            </button>
+                        </div>
+                        
+                        <div id="more-certs" class="hidden mt-4 space-y-4">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mr-4">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800">DevOps on AWS Specialization</h4>
+                                    <p class="text-sm text-gray-600">AWS • Oct 2023</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mr-4">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800">AWS Fundamentals Specialization</h4>
+                                    <p class="text-sm text-gray-600">AWS • Oct 2023</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mr-4">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800">IBM Data Analyst Professional Certificate</h4>
+                                    <p class="text-sm text-gray-600">IBM • Aug 2023</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mr-4">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800">Deep Learning Specialization</h4>
+                                    <p class="text-sm text-gray-600">DeepLearning.AI • Apr 2023</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mr-4">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800">Machine Learning Specialization</h4>
+                                    <p class="text-sm text-gray-600">Stanford University and DeepLearning.AI • Mar 2023</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mr-4">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800">IBM Data Science Professional Certificate</h4>
+                                    <p class="text-sm text-gray-600">IBM • Mar 2023</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mr-4">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800">IBM Applied AI Professional Certificate</h4>
+                                    <p class="text-sm text-gray-600">IBM • Mar 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Get In Touch</h2>
+            
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-8">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-6">Contact Information</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mr-4">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Email</h4>
+                                <p class="text-gray-600">jihadakbr@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mr-4">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Phone</h4>
+                                <p class="text-gray-600">(+62) 8133 2326 785</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mr-4">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Location</h4>
+                                <p class="text-gray-600">Jakarta, Indonesia</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mr-4">
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800">LinkedIn</h4>
+                                <a href="https://linkedin.com/in/jihadakbr" target="_blank" class="text-gray-600 hover:text-blue-600">linkedin.com/in/jihadakbr</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mr-4">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800">GitHub</h4>
+                                <a href="https://github.com/jihadakbr" target="_blank" class="text-gray-600 hover:text-blue-600">github.com/jihadakbr</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-6">Send Me a Message</h3>
+                    <form class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                        
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                            <input type="text" id="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300 shadow-md">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-xl font-bold">Jihad Akbar</h3>
+                    <p class="text-gray-400">Data Science Enthusiast</p>
+                </div>
+                
+                <div class="flex space-x-6">
+                    <a href="https://linkedin.com/in/jihadakbr" target="_blank" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-linkedin-in text-xl"></i>
+                    </a>
+                    <a href="https://github.com/jihadakbr" target="_blank" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="mailto:jihadakbr@gmail.com" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fas fa-envelope text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-6 pt-6 text-center text-gray-400 text-sm">
+                <p>&copy; 2025 Jihad Akbar. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
