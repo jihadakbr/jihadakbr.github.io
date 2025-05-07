@@ -47,34 +47,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         document.getElementById('mobile-menu').classList.add('hidden');
     });
 });
-
-// Contact form submission
-document.querySelector('#contact-form').addEventListener('submit', async (event) => {
-    event.preventDefault(); // Prevent default form submission
-
-    const form = event.target;
-    const formData = new FormData(form);
-
-    // Convert form data to JSON
-    const data = Object.fromEntries(formData.entries());
-
-    try {
-        const response = await fetch('https://formspree.io/f/xldbngwp', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(data),
-        });
-
-        if (response.ok) {
-            alert('Your message has been sent successfully!');
-            form.reset();
-        } else {
-            alert('Failed to send message. Please try again.');
-        }
-    } catch (error) {
-        console.error('Error:', error);
-        alert('An error occurred. Please try again.');
-    }
-});
