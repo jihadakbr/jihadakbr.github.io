@@ -58,7 +58,9 @@
                 <div class="md:w-1/2 mb-10 md:mb-0">
                     <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Hi, I'm <span class="text-blue-600">Jihad Akbar</span></h1>
                     <h2 class="text-2xl md:text-3xl font-semibold text-gray-700 mb-6">Data Science Enthusiast</h2>
-                    <p class="text-lg text-gray-600 mb-8">Detail-oriented Machine Learning professional with expertise in Python, SQL, and data visualization. Passionate about building data-driven solutions that create real impact.</p>
+                    <p class="text-lg text-gray-600 mb-8">
+                        Aspiring Data Scientist passionate about machine learning, skilled in Python, SQL, and data visualization. 
+                        Eager to leverage my technical expertise to create innovative, data-driven solutions.</p>
                     <div class="flex space-x-4">
                         <a href="#contact" class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300 shadow-md">Get In Touch</a>
                         <a href="#projects" class="px-6 py-3 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition duration-300">View Projects</a>
@@ -204,24 +206,26 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Projects Section: Thumbnail Size -> Height size = Width size - 100px -->
     <section id="projects" class="section py-16 bg-white">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Data Projects</h2>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" style="margin-bottom:2rem">
                 <!-- Project 1 -->
                 <div class="project-card bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition duration-300">
-                    <div class="h-48 bg-blue-100 flex items-center justify-center">
-                        <i class="fas fa-chart-line text-blue-600 text-5xl"></i>
+                    <div class="h-72 overflow-hidden flex items-center justify-center p-1">
+                        <img src="assets/img/planar-data-classification-with-one-hidden-layer.png" 
+                             alt="Data visualization" 
+                             class="max-h-full max-w-full object-contain">
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">FutureSight: E-Commerce Forecasting</h3>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Time-Series Forecasting (Olist E-Commerce)</h3>
                         <p class="text-gray-600 mb-4">Built time series forecasting model to optimize inventory and revenue planning by accurately predicting daily order volumes and revenue trends.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Python</span>
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Time-series forecasting</span>
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Automatic Forecast</span>
                             <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">SARIMA</span>
-                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Time Series</span>
                         </div>
                         <a href="https://github.com/jihadakbr/time-series-forecasting-olist-e-commerce" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium flex items-center">
                             View Project <i class="fas fa-external-link-alt ml-2"></i>
@@ -232,17 +236,17 @@
                 <!-- Project 2 -->
                 <div class="project-card bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition duration-300">
                     <div class="h-48 bg-blue-100 flex items-center justify-center">
-                        <i class="fas fa-user-slash text-blue-600 text-5xl"></i>
+                        <i class="fas fa-users text-blue-600 text-5xl"></i>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Churn Analysis</h3>
-                        <p class="text-gray-600 mb-4">Conducted churn analysis to predict customer churn and identify key drivers using feature importance analysis with XGBoost achieving 91% recall.</p>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Eye Disease Classifier</h3>
+                        <p class="text-gray-600 mb-4">Developed a deep learning model to classify cataract, diabetic retinopathy, glaucoma, and normal conditions with 83% accuracy.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Python</span>
-                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">XGBoost</span>
-                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Streamlit</span>
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Computer Vision</span>
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Deep Learning</span>
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">InceptionV3</span>
                         </div>
-                        <a href="https://github.com/jihadakbr/churn-analysis" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+                        <a href="https://github.com/jihadakbr/eye-disease-classification" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium flex items-center">
                             View Project <i class="fas fa-external-link-alt ml-2"></i>
                         </a>
                     </div>
@@ -254,14 +258,73 @@
                         <i class="fas fa-users text-blue-600 text-5xl"></i>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">RFM Analysis for Automobile Sales</h3>
-                        <p class="text-gray-600 mb-4">Led RFM analysis to segment customers in automobile sales, creating 9 customer segments with tailored RFM scores and actionable insights.</p>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Churn Analysis</h3>
+                        <p class="text-gray-600 mb-4">Developed a churn prediction model with XGBoost, achieving 91% recall, 70% precision, and 79% F1-score, delivering actionable insights for business.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Python</span>
-                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Power BI</span>
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Churn Prediction</span>
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">XGBoost</span>
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Recall</span>
+                        </div>
+                        <a href="https://github.com/jihadakbr/churn-analysis" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+                            View Project <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 4 -->
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <div class="h-48 bg-blue-100 flex items-center justify-center">
+                        <i class="fas fa-chart-line text-blue-600 text-5xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">RFM Analysis for Customer Segmentation in Automobile Sales</h3>
+                        <p class="text-gray-600 mb-4">Conducted RFM analysis to segment automobile customers, creating 9 segments with actionable insights and a Power BI dashboard for visualizing KPIs.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">RFM Analysis</span>
                             <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Customer Segmentation</span>
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Power BI</span>
                         </div>
                         <a href="https://github.com/jihadakbr/rfm-customer-segmentation-automobile-sales" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+                            View Project <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <div class="h-48 bg-blue-100 flex items-center justify-center">
+                        <i class="fas fa-user-slash text-blue-600 text-5xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Credit Card Fraud Detection</h3>
+                        <p class="text-gray-600 mb-4">Built a precision-optimized model for fraud detection using anonymized transaction data, addressing class imbalance, and achieving a PR AUC of 0.812 and an F2 score of 0.794.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Fraud Detection</span>
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Precision-Recall AUC</span>
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Class Imbalance</span>
+                        </div>
+                        <a href="https://github.com/jihadakbr/credit-card-fraud-detection" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+                            View Project <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <div class="h-48 bg-blue-100 flex items-center justify-center">
+                        <i class="fas fa-users text-blue-600 text-5xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">New York City Taxi Trip Duration</h3>
+                        <p class="text-gray-600 mb-4">Predicted NYC taxi trip durations with LightGBM, achieving an RMSLE of 0.55 and identifying trip patterns using K-Means clustering.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Taxi Trip Duration</span>
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">LightGBM</span>
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">K-Means Clustering</span>
+                        </div>
+                        <a href="https://github.com/jihadakbr/new-york-city-taxi-trip-duration" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium flex items-center">
                             View Project <i class="fas fa-external-link-alt ml-2"></i>
                         </a>
                     </div>
@@ -309,7 +372,7 @@
                 <div>
                     <h3 class="text-2xl font-semibold text-gray-800 mb-6">Certifications</h3>
                     
-                    <div class="bg-white p-6 rounded-xl shadow-sm h-full">
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
                         <div class="space-y-4">
                             <div class="flex items-start">
                                 <div class="flex-shrink-0 h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mr-4">
@@ -328,39 +391,47 @@
                                     <i class="fas fa-certificate"></i>
                                 </div>
                                 <div>
-                                    <h4 class="font-medium text-gray-800">Python for Everybody Specialization</h4>
+                                    <a href="https://www.coursera.org/account/accomplishments/specialization/4BTNU2RF3L4H" target="_blank" class="custom-hover text-gray-800">
+                                        <h4 class="font-medium">Python for Everybody Specialization</h4>
+                                    </a>  
                                     <p class="text-sm text-gray-600">University of Michigan • Jan 2024</p>
-                                </div>
+                                </div>                               
                             </div>
-                            
+
                             <div class="flex items-start">
                                 <div class="flex-shrink-0 h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mr-4">
                                     <i class="fas fa-certificate"></i>
                                 </div>
                                 <div>
-                                    <h4 class="font-medium text-gray-800">Generative Adversarial Networks (GANs) Specialization</h4>
+                                    <a href="https://www.coursera.org/account/accomplishments/specialization/WJNFDTQNAJTN" target="_blank" class="custom-hover text-gray-800">
+                                        <h4 class="font-medium">Generative Adversarial Networks (GANs) Specialization</h4>
+                                    </a>  
                                     <p class="text-sm text-gray-600">DeepLearning.AI • Dec 2023</p>
-                                </div>
+                                </div>                               
                             </div>
-                            
+
                             <div class="flex items-start">
                                 <div class="flex-shrink-0 h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mr-4">
                                     <i class="fas fa-certificate"></i>
                                 </div>
                                 <div>
-                                    <h4 class="font-medium text-gray-800">Practical Data Science on the AWS Cloud Specialization</h4>
+                                    <a href="https://www.coursera.org/account/accomplishments/specialization/RFUWLXCCMT7A" target="_blank" class="custom-hover text-gray-800">
+                                        <h4 class="font-medium">Practical Data Science on the AWS Cloud Specialization</h4>
+                                    </a>  
                                     <p class="text-sm text-gray-600">DeepLearning.AI • Dec 2023</p>
-                                </div>
+                                </div>                               
                             </div>
-                            
+
                             <div class="flex items-start">
                                 <div class="flex-shrink-0 h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mr-4">
                                     <i class="fas fa-certificate"></i>
                                 </div>
                                 <div>
-                                    <h4 class="font-medium text-gray-800">IBM Data Engineering Professional Certificate</h4>
+                                    <a href="https://www.coursera.org/account/accomplishments/professional-cert/9AKV8UTPAWPY" target="_blank" class="custom-hover text-gray-800">
+                                        <h4 class="font-medium">IBM Data Engineering Professional Certificate</h4>
+                                    </a>  
                                     <p class="text-sm text-gray-600">IBM • Oct 2023</p>
-                                </div>
+                                </div>                               
                             </div>
 
                             <div class="flex items-start">
@@ -368,9 +439,11 @@
                                     <i class="fas fa-certificate"></i>
                                 </div>
                                 <div>
-                                    <h4 class="font-medium text-gray-800">DevOps on AWS Specialization</h4>
+                                    <a href="https://www.coursera.org/account/accomplishments/specialization/3N3JGXYQBFA8" target="_blank" class="custom-hover text-gray-800">
+                                        <h4 class="font-medium">DevOps on AWS Specialization</h4>
+                                    </a>  
                                     <p class="text-sm text-gray-600">AWS • Oct 2023</p>
-                                </div>
+                                </div>                               
                             </div>
 
                             <div class="flex items-start">
@@ -378,9 +451,11 @@
                                     <i class="fas fa-certificate"></i>
                                 </div>
                                 <div>
-                                    <h4 class="font-medium text-gray-800">AWS Fundamentals Specialization</h4>
+                                    <a href="https://www.coursera.org/account/accomplishments/specialization/KE57FRM5K6Y8" target="_blank" class="custom-hover text-gray-800">
+                                        <h4 class="font-medium">AWS Fundamentals Specialization</h4>
+                                    </a>  
                                     <p class="text-sm text-gray-600">AWS • Oct 2023</p>
-                                </div>
+                                </div>                               
                             </div>
                             
                             <div class="flex items-start">
@@ -388,50 +463,61 @@
                                     <i class="fas fa-certificate"></i>
                                 </div>
                                 <div>
-                                    <h4 class="font-medium text-gray-800">IBM Data Analyst Professional Certificate</h4>
+                                    <a href="https://www.coursera.org/account/accomplishments/professional-cert/E9CVYKJMWLLU" target="_blank" class="custom-hover text-gray-800">
+                                        <h4 class="font-medium">IBM Data Analyst Professional Certificate</h4>
+                                    </a>  
                                     <p class="text-sm text-gray-600">IBM • Aug 2023</p>
-                                </div>
+                                </div>                               
                             </div>
-                            
+
                             <div class="flex items-start">
                                 <div class="flex-shrink-0 h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mr-4">
                                     <i class="fas fa-certificate"></i>
                                 </div>
                                 <div>
-                                    <h4 class="font-medium text-gray-800">Deep Learning Specialization</h4>
+                                    <a href="https://www.coursera.org/account/accomplishments/specialization/F4UZQ5FR7MK7" target="_blank" class="custom-hover text-gray-800">
+                                        <h4 class="font-medium">Deep Learning Specialization</h4>
+                                    </a>  
                                     <p class="text-sm text-gray-600">DeepLearning.AI • Apr 2023</p>
-                                </div>
+                                </div>                               
                             </div>
-                            
+
                             <div class="flex items-start">
                                 <div class="flex-shrink-0 h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mr-4">
                                     <i class="fas fa-certificate"></i>
                                 </div>
                                 <div>
-                                    <h4 class="font-medium text-gray-800">Machine Learning Specialization</h4>
+                                    <a href="https://www.coursera.org/account/accomplishments/specialization/KWP6SHVDJ4QU" target="_blank" class="custom-hover text-gray-800">
+                                        <h4 class="font-medium">Machine Learning Specialization</h4>
+                                    </a>  
                                     <p class="text-sm text-gray-600">Stanford University and DeepLearning.AI • Mar 2023</p>
-                                </div>
+                                </div>                               
                             </div>
-                            
+
                             <div class="flex items-start">
                                 <div class="flex-shrink-0 h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mr-4">
                                     <i class="fas fa-certificate"></i>
                                 </div>
                                 <div>
-                                    <h4 class="font-medium text-gray-800">IBM Data Science Professional Certificate</h4>
+                                    <a href="https://www.coursera.org/account/accomplishments/professional-cert/CS2ZR8E89KMN" target="_blank" class="custom-hover text-gray-800">
+                                        <h4 class="font-medium">IBM Data Science Professional Certificate</h4>
+                                    </a>  
                                     <p class="text-sm text-gray-600">IBM • Mar 2023</p>
-                                </div>
+                                </div>                               
                             </div>
-                            
+
                             <div class="flex items-start">
                                 <div class="flex-shrink-0 h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mr-4">
                                     <i class="fas fa-certificate"></i>
                                 </div>
                                 <div>
-                                    <h4 class="font-medium text-gray-800">IBM Applied AI Professional Certificate</h4>
+                                    <a href="https://www.coursera.org/account/accomplishments/professional-cert/6TUAYV7VKJXC" target="_blank" class="custom-hover text-gray-800">
+                                        <h4 class="font-medium">IBM Applied AI Professional Certificate</h4>
+                                    </a>  
                                     <p class="text-sm text-gray-600">IBM • Mar 2023</p>
-                                </div>
+                                </div>                               
                             </div>
+
                         </div>
                         
                         <!-- <div class="mt-4 text-center">
