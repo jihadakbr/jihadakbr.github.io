@@ -1,10 +1,4 @@
-# Jihad Akbar - Data Science Portfolio
-
-<p align="center">
-  <a href="https://jihadakbr.github.io">
-    <img src="https://img.shields.io/badge/🔗_Portfolio_Website-4285F4?style=for-the-badge" width="300" height="60" alt="Portfolio Website"/>
-  </a>
-</p>
+# Jihad Akbar - Portfolio Website
 
 ## 👋 About Me
 Aspiring Data Scientist passionate about machine learning, skilled in Python, SQL, and data visualization.
@@ -24,3 +18,9 @@ Aspiring Data Scientist passionate about machine learning, skilled in Python, SQ
 - 📍 Jakarta, Indonesia
 - ✉️ jihadakbr@gmail.com
 - 🔗 [LinkedIn](https://linkedin.com/in/jihadakbr)
+
+<p align="center">
+  <a href="https://jihadakbr.github.io">
+    <img src="https://img.shields.io/badge/🔗_Portfolio_Website-4285F4?style=for-the-badge" width="300" height="60" alt="Portfolio Website"/>
+  </a>
+</p>
