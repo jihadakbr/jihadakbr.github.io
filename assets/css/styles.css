@@ -72,3 +72,14 @@ body {
 .flex.flex-wrap.languages{
     flex-direction: column;
 }
+
+.custom-hover {
+    color: #4b5563; /* Equivalent to Tailwind's text-gray-600 */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.custom-hover:hover {
+    color: #2563eb; /* Equivalent to Tailwind's text-blue-600 */
+    text-decoration: none;
+}
