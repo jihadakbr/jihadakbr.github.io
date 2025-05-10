@@ -24,3 +24,8 @@ Aspiring Data Scientist passionate about machine learning, skilled in Python, SQ
     <img src="https://img.shields.io/badge/🔗_Portfolio_Website-4285F4?style=for-the-badge" width="300" height="60" alt="Portfolio Website"/>
   </a>
 </p>
+
+---
+
+## 🛡️ License
+This project is licensed under **All Rights Reserved**. See the [LICENSE](LICENSE) file for details.
