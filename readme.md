@@ -28,4 +28,7 @@ Aspiring Data Scientist passionate about machine learning, skilled in Python, SQ
 ---
 
 ## 🛡️ License
-This project is licensed under **All Rights Reserved**. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the **Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)** license.  
+See the [LICENSE](LICENSE) file for details.
+
+![CC BY-NC-ND 4.0](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-nd.svg)
