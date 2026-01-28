@@ -5,10 +5,38 @@
     --light: #f8fafc;
 }
 
+/* Dark mode colors */
+.dark {
+    --bg-primary: #0f172a;
+    --bg-secondary: #1e293b;
+    --bg-tertiary: #334155;
+    --text-primary: #f1f5f9;
+    --text-secondary: #cbd5e1;
+    --text-tertiary: #94a3b8;
+    --border-color: #334155;
+    --card-bg: #1e293b;
+    --card-hover: #334155;
+}
+
+/* Light mode colors */
+body {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8fafc;
+    --bg-tertiary: #f1f5f9;
+    --text-primary: #1e293b;
+    --text-secondary: #475569;
+    --text-tertiary: #64748b;
+    --border-color: #e2e8f0;
+    --card-bg: #ffffff;
+    --card-hover: #f8fafc;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     scroll-behavior: smooth;
-    background-color: #f8fafc;
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .section {
@@ -82,4 +110,156 @@ body {
 .custom-hover:hover {
     color: #2563eb; /* Equivalent to Tailwind's text-blue-600 */
     text-decoration: none;
+}
+
+/* Dark mode styles - using html.dark for higher specificity */
+html.dark {
+    color-scheme: dark;
+}
+
+html.dark body {
+    background-color: #0f172a !important;
+}
+
+html.dark nav {
+    background-color: #1e293b !important;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.5) !important;
+}
+
+html.dark .bg-white {
+    background-color: #1e293b !important;
+}
+
+html.dark .bg-gray-50 {
+    background-color: #0f172a !important;
+}
+
+html.dark .bg-blue-50 {
+    background-color: #172554 !important;
+}
+
+html.dark .bg-blue-100 {
+    background-color: #1e3a5f !important;
+}
+
+html.dark .bg-gradient-to-r {
+    background: linear-gradient(to right, #172554, #1e3a5f) !important;
+}
+
+html.dark .text-gray-700,
+html.dark .text-gray-800,
+html.dark .text-gray-600,
+html.dark .text-gray-500 {
+    color: #cbd5e1 !important;
+}
+
+html.dark .text-blue-800 {
+    color: #93c5fd !important;
+}
+
+html.dark .text-gray-400 {
+    color: #94a3b8 !important;
+}
+
+html.dark .text-blue-600 {
+    color: #60a5fa !important;
+}
+
+html.dark .border-gray-700 {
+    border-color: #334155 !important;
+}
+
+html.dark .shadow-sm,
+html.dark .shadow-md,
+html.dark .shadow-lg,
+html.dark .shadow-xl {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.4) !important;
+}
+
+html.dark .hover\:shadow-md:hover,
+html.dark .hover\:shadow-lg:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5) !important;
+}
+
+html.dark .hover\:bg-blue-50:hover {
+    background-color: #172554 !important;
+}
+
+html.dark .bg-gray-800 {
+    background-color: #020617 !important;
+}
+
+/* Form inputs - override inline styles */
+html.dark input[type="text"],
+html.dark input[type="email"],
+html.dark textarea {
+    background-color: #334155 !important;
+    color: #f1f5f9 !important;
+    border-color: #475569 !important;
+}
+
+html.dark input::placeholder,
+html.dark textarea::placeholder {
+    color: #94a3b8 !important;
+}
+
+html.dark label {
+    color: #cbd5e1 !important;
+}
+
+/* Project card image containers */
+html.dark .project-card .h-72 {
+    background-color: #0f172a !important;
+}
+
+/* Mobile menu */
+html.dark #mobile-menu {
+    background-color: #1e293b !important;
+}
+
+html.dark .border-blue-600 {
+    border-color: #3b82f6 !important;
+}
+
+html.dark .custom-hover {
+    color: #cbd5e1;
+}
+
+html.dark .custom-hover:hover {
+    color: #60a5fa;
+}
+
+/* Skill badges */
+html.dark .skill-badge {
+    background-color: #1e3a5f !important;
+    color: #93c5fd !important;
+}
+
+/* Project tags */
+html.dark .project-card .text-xs {
+    background-color: #1e3a5f !important;
+    color: #93c5fd !important;
+}
+
+/* Headings */
+html.dark h1,
+html.dark h2,
+html.dark h3,
+html.dark h4 {
+    color: #f1f5f9 !important;
+}
+
+/* Paragraph and list text */
+html.dark p,
+html.dark li {
+    color: #cbd5e1 !important;
+}
+
+/* Form button */
+html.dark form button[type="submit"] {
+    background-color: #2563eb !important;
+}
+
+html.dark form button[type="submit"]:hover {
+    background-color: #1d4ed8 !important;
 }
